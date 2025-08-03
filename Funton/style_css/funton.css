@@ -1,0 +1,285 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  width: 100%;
+  background: #000;
+}
+header{
+  width: 100%;
+  border-bottom: 2px solid #121214;
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 10px 0 10px 0;
+}
+/*header*/
+.logo{
+  width: 200px;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+
+/*intro*/
+.intro img{
+  width: 50px;
+  height: 50px;
+  margin: 10px 0 10px 0;
+}
+.intro{
+  text-align: center;
+  color: #fff;
+}
+h3{
+  color: #fff;
+}
+p{
+  margin: 30px;
+  color: #fff;
+}
+h1{
+  margin: 30px;
+  text-align: center;
+  color: #fff;
+}
+.devices img{
+  width: 60px;
+  height: 100px;
+}
+/*investiments*/
+.title{
+  background: #383315;
+  color: #F4DC3E;
+  margin: 10px 0 10px 0;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px;
+}
+.logo-marquee {
+  width: 65%;
+  overflow: hidden;
+  background: #000; /* opcional */
+  padding: 30px 0;
+}
+
+.logo-track {
+  display: flex;
+   width: calc(200%); /* o dobro para looping */
+  animation: scroll-logos 20s linear infinite;
+}
+
+.logo-track img {
+  height: 40px;
+  margin: 0 40px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(1.5);
+}
+
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*projects*/
+.projects{
+  padding: 30px;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid #121214;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 10px;
+}
+.crypto-marquee {
+  width: 100%;
+  overflow: hidden;
+  background: ##121214; /* fundo escuro estiloso */
+  padding: 30 0px;
+  margin: 15px;
+  
+}
+
+.crypto-track {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: calc(200%);
+  animation: scroll-crypto 20s linear infinite;
+}
+
+.crypto-track img {
+  width: 50px;
+  margin: 0 30px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.crypto-track img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll-crypto {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.wallets{
+  width: 100%;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  text-align: left;
+}
+.wallets img{
+  margin: 10px;
+  width: 70px;
+}
+.tokens{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tokens img{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  text-align: left;
+}
+.box .deployment img{
+  margin: 10px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+.box .deployment a{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: inline;
+}
+.games{
+ width: 100%;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.games img{
+  width: 400px;
+  margin: 10px
+  padding: 30px;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*roadmap*/
+.roadmap h1, p{
+  text-align: center;
+  margin: 10px;
+}
+.button{
+  background: yellow;
+  padding: 10px 20px 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.roadmap img{
+  margin: 30px;
+}
+
+/*questions*/
+.questions ul{
+  list-style: none;
+}
+.questions h1, p{
+  text-align: left;
+}
+.questions li{
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #121214;
+  border-radius: 10px;
+  color: #fff;
+}
+.questions li:hover{
+  text-decoration: underline;
+}
+
+.button-social{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+}
+.button-social img{
+  width: 20px;
+}
+/*footer*/
+footer{
+  padding-bottom: 20px;
+}
+footer .logo{
+  margin: 5px;
+}
+footer ul{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+footer li{
+  margin: 10px;
+}
+a{
+  color: #fff;
+}
+footer a{
+  color: #d2d2d2;
+}
+footer h3{
+  color: #fff;
+  font-weight: 10px;
+}
